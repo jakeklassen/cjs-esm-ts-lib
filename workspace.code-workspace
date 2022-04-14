@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "✨ root",
+      "path": "."
+    },
+    {
+      "name": "📦 cjs-esm-ts-lib",
+      "path": "packages/cjs-esm-ts-lib"
+    },
+    {
+      "name": "📦 cjs-project",
+      "path": "packages/cjs-project"
+    },
+    {
+      "name": "📦 esm-project",
+      "path": "packages/esm-project"
+    }
+  ]
+}

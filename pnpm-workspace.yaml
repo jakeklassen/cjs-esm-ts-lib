@@ -1,0 +1,8 @@
+packages:
+  - 'packages/**'
+  - '!**/dist/**'
+  - '!packages/claims/lib/**'
+  - '!packages/ableto-support/lib/**'
+  - '!packages/patient-eligibility/lib/**'
+  - '!packages/claims-aggregator/lib/**'
+  - '!packages/claims-events-service/lib/**'

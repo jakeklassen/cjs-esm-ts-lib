@@ -1,0 +1,51 @@
+{
+  "name": "cjs-esm-ts-lib",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": "Jake Klassen",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "prebuild": "shx rm -rf dist",
+    "build": "tsup src --format cjs,esm --dts",
+    "prepare": "ts-patch install -s",
+    "watch": "pnpm run build -- --watch src",
+    "start": "ts-node src",
+    "test": "jest"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@jest/globals": "27.5.1",
+    "@types/node": "16.11.26",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "comment-json": "4.2.2",
+    "eslint": "8.13.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "expect": "27.5.1",
+    "jest": "^27.5.1",
+    "jest-ts-auto-mock": "^2.1.0",
+    "prettier": "2.6.2",
+    "shx": "0.3.4",
+    "ts-auto-mock": "^3.5.0",
+    "ts-jest": "^27.1.4",
+    "ts-node": "10.7.0",
+    "ts-patch": "^2.0.1",
+    "tsconfig-paths": "3.14.1",
+    "tsm": "2.2.1",
+    "tsup": "^5.12.5",
+    "typescript": "^4.6.3",
+    "uvu": "0.5.3"
+  }
+}

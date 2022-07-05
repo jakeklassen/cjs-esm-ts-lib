@@ -25,4 +25,9 @@ module.exports = {
     '.(ts|tsx)': 'ts-jest',
   },
   verbose: true,
+  globals: {
+    'ts-jest': {
+      compiler: 'ttypescript',
+    },
+  },
 };

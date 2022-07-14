@@ -2,11 +2,10 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   env: {
     es6: true,
-    jest: true,
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 2019,
+    ecmaVersion: 2022,
     sourceType: 'module',
   },
   globals: {

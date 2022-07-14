@@ -64,17 +64,7 @@
     "resolveJsonModule": true,
 
     /* Advanced Options */
-    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
-    "plugins": [
-      {
-        "transform": "ts-auto-mock/transformer",
-        "cacheBetweenTests": false
-      }
-    ]
-  },
-  "ts-node": {
-    // Do not forget to `npm i -D tsconfig-paths`
-    "require": ["tsconfig-paths/register"]
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
   "include": ["src"],
   "exclude": ["dist"]

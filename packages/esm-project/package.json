@@ -14,7 +14,7 @@
     "cjs-esm-ts-lib": "workspace:^1.0.0"
   },
   "devDependencies": {
-    "prettier": "2.7.1",
-    "typescript": "^4.8.3"
+    "prettier": "2.8.4",
+    "typescript": "^4.9.5"
   }
 }
